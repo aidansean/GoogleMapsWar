@@ -1,0 +1,63 @@
+th, td{
+  width : 33% ;
+  text-align : center ;
+}
+tr.even     { background : #dddddd ; }
+tr.odd      { background : #ffffff ; }
+tr.highlight{ background : #ffaaaa ; }
+table{
+  border-collapse : collapse ;
+}
+div#map-canvas, div#map-small-canvas{
+  border : 1px solid black ;
+}
+
+table{
+  margin-bottom : 25px ;
+}
+td#td_small_map, th#th_small_map{
+  width : 300px ;
+}
+td#td_small_map_data, th#th_small_map_data{
+  width : 450px ;
+}
+td.hex_data_left{
+  text-align : right ;
+}
+td.dir{
+  width : 8.3%
+}
+input.text{
+  width : 100px ;
+}
+input.dir{
+  width : 10px ;
+}
+input.connection_button{
+  display : inline ;
+  width : 75px ;
+  border : 1px solid black ;
+  padding : 0.25em ;
+}
+
+div.connection_button_selected{
+  border : 2px solid black ;
+  background : #ddffdd ;
+}
+
+
+
+
+
+
+.labels {
+     color: white;
+     background-color: black;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     padding-left : 0.5em ;
+     padding-right : 0.5em ;
+     text-align: center;
+     white-space: nowrap;
+   }
+
