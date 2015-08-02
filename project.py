@@ -3,10 +3,13 @@ from project_module import project_object, image_object, link_object, challenge_
 p = project_object('GoogleMapsWar', 'Google Maps War')
 p.domain = 'http://www.aidansean.com/'
 p.path = 'GoogleMapsWar'
-p.preview_image_ = image_object('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', 408, 287)
+p.preview_image    = image_object('%s/images/project.jpg'   %p.path, 150, 250)
+p.preview_image_bw = image_object('%s/images/project_bw.jpg'%p.path, 150, 250)
 p.folder_name = 'aidansean'
 p.github_repo_name = 'GoogleMapsWar'
 p.mathjax = False
+p.tags = 'Games'
+p.technologies = 'canvas,HTML,JavaScript,GoogleMaps'
 p.links.append(link_object(p.domain, p.path, 'Live page'))
 p.introduction = 'This project was made partly to combine the <a href="http://aidansean.com/projects/?p=605">Hexagonal civ</a> game with Google Maps, and partly to push the Google maps API to its limits.  It turns out that Google Maps is not suited to this heavy use.'
 p.overview = '''This project is intended to be a Risk style conquest game based on a map of Europe.  The maps would be split into hexagons with rules for how the different unit (land, air, sea) could move from place to place.  The map is split into equal areas of latitude and longitude with values chosen to best suit the arrangement of cities.  Ideally the economic value of each hexagon would be taken into account, although this would require quite a bit of research.  The connections between the hexagons is already defined, so in principle this could lead to a rather simple game by randomising the economic and defensive values of each hexagon (or giving them all equal value.)'''
